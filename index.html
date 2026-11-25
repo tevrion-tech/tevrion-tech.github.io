@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tevrion Technologies</title>
+<meta name="description" content="Tevrion Technologies builds focused desktop software. Projects, details and direct downloads, starting with Morphit, the one-gesture file converter for Windows.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tevrion Technologies">
+<meta property="og:description" content="Focused desktop software. First project: Morphit, convert any file on Windows with one gesture.">
+<meta property="og:image" content="https://tevrion-tech.github.io/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#07080D">
+<link rel="icon" href="media/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="media/tevrion-icon.svg">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600&family=Onest:wght@400;500;600;700&family=JetBrains+Mono&display=swap">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav__row">
+    <a class="brand" href="./" aria-label="Tevrion Technologies, home"><img src="media/tevrion-icon.svg" width="34" height="34" alt=""><span class="wordmark" aria-hidden="true">TEVRION</span></a>
+    <ul class="nav__links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a class="btn btn--small" href="#projects">See projects</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero container" aria-labelledby="hero-title">
+    <div class="hero__text">
+    <h1 id="hero-title">Software that does one job well.</h1>
+    <p class="lead">Focused desktop tools, each with its own page and a direct download.</p>
+    <div class="hero__actions">
+      <a class="btn" href="#projects">Explore the projects</a>
+      <a class="btn btn--quiet" href="projects/morphit.html">Meet Morphit</a>
+    </div>
+    </div>
+    <img class="hero__mark" src="media/tevrion-icon.svg" width="512" height="512" alt="" fetchpriority="high">
+  </section>
+
+  <section class="section container" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title">One tool shipped, more on the way.</h2>
+    <article class="project" aria-labelledby="morphit-title">
+      <div>
+        <div class="project__name">
+          <svg class="ring" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="11" stroke-dasharray="17.66 5.376" transform="rotate(14 16 16)"/></svg>
+          <h3 id="morphit-title">Morphit</h3>
+        </div>
+        <p class="project__line">Convert any file on Windows with one gesture: hold Ctrl, drag it, let go on a format.</p>
+        <ul class="project__facts">
+          <li>Word, Excel, PDF, pictures, video and audio</li>
+          <li>Fully offline: network code does not even compile</li>
+          <li>Free for Windows 10 and 11</li>
+        </ul>
+        <div class="project__actions">
+          <a class="btn btn--saffron" href="https://github.com/tevrion-tech/morphit-app/releases/latest/download/Morphit.Setup.exe" download>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5 10 4.5v7H3zm8-1.2L21 3v8.5H11zM3 12.5h7v7l-7-1zm8 0h10V21l-10-1.4z"/></svg>
+            Download, 184 MB
+          </a>
+          <a class="btn btn--quiet" href="projects/morphit.html">Details</a>
+        </div>
+        <p class="project__alt">Or <code class="cmd">winget install morphit</code>, or the <a class="link" href="https://github.com/tevrion-tech/morphit-app">source page on GitHub</a>.</p>
+      </div>
+      <figure class="film" data-loop>
+        <video src="media/morphit-20s.mp4" poster="media/poster.jpg" width="1920" height="1080" muted loop playsinline preload="metadata" controls aria-label="Morphit in twenty seconds: hold Ctrl, drag a Word file onto PDF, and the PDF appears next to the original"></video>
+        <button class="btn btn--quiet btn--small film__toggle" type="button" data-loop-toggle>Pause</button>
+      </figure>
+    </article>
+  </section>
+
+  <section class="section section--last container" id="about" aria-labelledby="about-title">
+    <div class="about">
+      <h2 id="about-title">About Tevrion</h2>
+      <p>We make software for the jobs people repeat every day at a desk. Each tool should be learned in a minute, stay out of the way, and respect the files it touches.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <div class="foot__row">
+      <img src="media/tevrion-icon.svg" width="28" height="28" alt="Tevrion">
+      <ul class="foot__links">
+        <li><a class="link" href="#projects">Projects</a></li>
+        <li><a class="link" href="projects/morphit.html">Morphit</a></li>
+      </ul>
+    </div>
+    <p>Copyright 2026 Tevrion Technologies.</p>
+  </div>
+</footer>
+
+<script src="loop.js"></script>
+</body>
+</html>
